@@ -1,0 +1,78 @@
+4. pravam lokalen folder na dekstop i vnatre gi stavam site linkovi vnatre
+  git init
+5.git remote add origin https://github.com/elenaPoposkaa/SI_2024_lab1_223032.git
+   
+6. nano README.md
+   git add .
+   git commit -m "Initial commit"
+7. git add .
+   git commit -m "Add starter code"
+8. git push origin master
+9. git branch bug1
+   git branch bug2
+10.git checkout bug1
+11. lokalno vleguvam vo kodot popravam od .length % 2 == 0 vo .length % 2 != 0
+    ctrl-s
+    git add .
+    git commit -m "Fix wrong condition in filterOddLengthStrings"
+12. git checkout bug2
+   
+13. lokalno od if (el.length() < minLength)  vo if (el.length() >= minLength)
+    ctrl-s
+    git add .
+    git commit -m "Fix wrong condition in makeBigStringFrom"
+14. git checkout bug1
+   
+15. pravam promena
+    git add .
+    git commit -m "Call method makeBigStringFrom in main class"
+16.git checkout bug2
+17. pravam promena vo 16 red
+    git add .
+    git commit -m "Call method makeBigStringFrom in main class"
+18.git push --all
+19. git checkout master
+20.git merge bug1
+   Nema konflikt se spoia so fast-forward
+   Updating de14a57..f821580
+Fast-forward
+ SILab1Main (1).java | 1 +
+ SILab1_1 (1).java   | 3 +--
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+21.git push origin master
+   git push -all
+22.git checkout bug2
+23. git rebase master
+Ima konflik
+Auto-merging SILab1Main (1).java
+CONFLICT (content): Merge conflict in SILab1Main (1).java
+error: could not apply 8c3c46a... Call method makeBigStringFrom in main class
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 8c3c46a... Call method makeBigStringFrom in main class
+
+<<<<<<< HEAD
+        System.out.println(SILab1_1.filterOddLengthStrings(list));
+=======
+        System.out.println(SILab1_2.makeBigStringFrom(list));
+>>>>>>> 8c3c46a (Call method makeBigStringFrom in main class)
+Go resavam problemot so brisenje na poslednite 3 linii.
+
+     git add .
+    git rebase --continue
+    git commit --amend
+
+24. git checkout master
+25. git merge bug2
+Updating f821580..90a79ee
+Fast-forward
+ SILab1Main (1).java | 2 ++
+ SILab1_2 (1).java   | 4 ++--
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+Nema konflikt se spojuvaat so fast forward
+26.git push --all
+27.git push origin bug2 --force
+

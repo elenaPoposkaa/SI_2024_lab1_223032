@@ -1,0 +1,23 @@
+commit a60fc7846da65035bacaa9ffde5b100f23795c35 (origin/bug1, bug1)
+Author: Elena Poposka <elena.poposka01@gmail.com>
+Date:   Sun Apr 14 17:16:30 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 17866e69327353e7384355a28a6ab99613314962
+Author: Elena Poposka <elena.poposka01@gmail.com>
+Date:   Sun Apr 14 17:12:15 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 426d90fd234c0a12a7ffc4db8d6ed4b6149013d1
+Author: Elena Poposka <elena.poposka01@gmail.com>
+Date:   Sun Apr 14 17:08:44 2024 +0200
+
+    Add starter code
+
+commit f1b9db67e3f448cb7a460f5be2066d62fceb8de1
+Author: Elena Poposka <elena.poposka01@gmail.com>
+Date:   Sun Apr 14 17:08:06 2024 +0200
+
+    Initial commit
